@@ -1,0 +1,25 @@
+{
+  "name": "angular-analytics",
+  "main": [
+    "angular-analytics.js",
+    "angular-analytics-service.js"
+  ],
+  "version": "0.1.0",
+  "authors": [
+    "L42y <423300@gmail.com>"
+  ],
+  "description": "Analytics for AngularJS",
+  "keywords": [
+    "angular",
+    "analytics"
+  ],
+  "license": "WTFPL",
+  "homepage": "https://github.com/L42y/angular-analytics",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
