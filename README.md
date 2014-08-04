@@ -22,6 +22,8 @@
 
 - [CNZZ](https://github.com/L42y/angular-analytics-integrations-cnzz)
 
+- [Google Classic Analytics (aka ga.js)](https://github.com/L42y/angular-analytics-integrations-ga)
+
 ## License
 
 [WTFPL](http://wtfpl.org)
