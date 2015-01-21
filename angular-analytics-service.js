@@ -23,9 +23,6 @@ angular.module('l42y.analytics').provider('Analytics', function (
       provider.integrations[identifier] = actions;
     },
     $get: function (
-      $window,
-      $location,
-      $rootScope
     ) {
       return service;
     }
