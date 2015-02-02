@@ -2,6 +2,8 @@ angular.module('l42y.analytics').provider('Analytics', function (
 ) {
   var integrations = {};
   var service = {
+    integrations: integrations,
+    integrate: integrateAnalyticsProvider,
     page: function trackPageView (current, previous) {
       angular.forEach(integrations, function (actions) {
         actions.page(current, previous);
@@ -19,14 +21,16 @@ angular.module('l42y.analytics').provider('Analytics', function (
       integrations: {}
     },
     integrations: integrations,
-    integrate: function integrateAnalyticsProvider (identifier, actions) {
-      provider.integrations[identifier] = actions;
-    },
+    integrate: integrateAnalyticsProvider,
     $get: function (
     ) {
       return service;
     }
   };
+
+  function integrateAnalyticsProvider (identifier, actions) {
+    integrations[identifier] = actions;
+  }
 
   return provider;
 });
