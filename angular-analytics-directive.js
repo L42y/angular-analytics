@@ -27,7 +27,7 @@ angular.module('l42y.analytics').directive('analytics', function (
   }
 
   return {
-    compile: function ($element, $attrs) {
+    link: function ($scope, $element, $attrs) {
       var trackEvents = [];
 
       $attrs.analytics.split(' ').forEach(function (event) {
